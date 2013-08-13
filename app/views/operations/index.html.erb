@@ -1,0 +1,27 @@
+<h1>Listing operations</h1>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Finished</th>
+    <th>Stdout</th>
+    <th>Stderr</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @operations.each do |operation| %>
+  <tr>
+    <td><%= operation.command %></td>
+    <td><%= operation.finished %></td>
+    <td><%= operation.stdout %></td>
+    <td><%= operation.stderr %></td>
+    <td><%= link_to 'Show', operation %></td>
+    <td><%= link_to 'Destroy', operation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Operation', new_operation_path %>

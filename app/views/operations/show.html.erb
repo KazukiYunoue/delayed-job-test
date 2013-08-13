@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Command:</b>
+  <%= @operation.command %>
+</p>
+
+<p>
+  <b>Finished:</b>
+  <%= @operation.finished %>
+</p>
+
+<p>
+  <b>Stdout:</b>
+  <%= @operation.stdout %>
+</p>
+
+<p>
+  <b>Stderr:</b>
+  <%= @operation.stderr %>
+</p>
+
+
+<%= link_to 'Back', operations_path %>

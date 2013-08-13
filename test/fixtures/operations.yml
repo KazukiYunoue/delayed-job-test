@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  command: MyString
+  finished: false
+  stdout: MyText
+  stderr: MyText
+
+two:
+  command: MyString
+  finished: false
+  stdout: MyText
+  stderr: MyText
